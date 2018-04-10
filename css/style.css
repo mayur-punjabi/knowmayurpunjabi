@@ -1,0 +1,31 @@
+body {
+	padding:10vh;
+}
+
+.instaimg{
+	//border: 1px solid black;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	background: white;
+	transition: all 0.5s ease;
+	transform: scale(0.8) translateZ(-10px);
+	border-radius: 1rem;
+}
+.instaimg img{
+	border-radius: 1rem;
+}
+.instaimg:hover{
+	transform:  scale(1) translateZ(10px);
+	box-shadow: 10px 10px 10px grey;
+}
+#instafeed{
+transform-style: preserve-3d;
+}
+.iglogo{
+	border: 1px solid black;
+}
+svg{
+	border: 1px solid blue;
+	transform: scale(0.5);
+}
