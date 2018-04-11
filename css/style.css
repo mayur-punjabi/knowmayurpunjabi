@@ -1,31 +1,77 @@
-body {
-	padding:10vh;
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.container-fluid{
+    height: 100vh;
+    max-width: 100vmin;
+    border-radius: 5vmin;
+    background-image: url(bg.JPG);
+    background-size: cover;
+    background-position: center 20%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+}
+a:hover{
+    text-decoration: none;
+}
+#header{
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#notch{
+    background: black;
+    height: 100%;
+    min-width: 35%;
+    max-width: 50%;
+    border-bottom-left-radius: 5vh;
+    border-bottom-right-radius: 5vh;
+}
+#header span{
+    padding: 0 5vmin;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+a{
+    font-size: 5rem;
+    color: white;
+}
+.dock{
+    width: 95vmin;
+    border-radius: 5vmin;
+    position: absolute;
+    bottom: 2.5%;
+    left: 5vmin;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(255,255,255,0.5);
+    
+}
+.tooltip {
+    position: relative;
 }
 
-.instaimg{
-	//border: 1px solid black;
-	padding: 10px;
-	display: flex;
-	align-items: center;
-	background: white;
-	transition: all 0.5s ease;
-	transform: scale(0.8) translateZ(-10px);
-	border-radius: 1rem;
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
 }
-.instaimg img{
-	border-radius: 1rem;
-}
-.instaimg:hover{
-	transform:  scale(1) translateZ(10px);
-	box-shadow: 10px 10px 10px grey;
-}
-#instafeed{
-transform-style: preserve-3d;
-}
-.iglogo{
-	border: 1px solid black;
-}
-svg{
-	border: 1px solid blue;
-	transform: scale(0.5);
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
