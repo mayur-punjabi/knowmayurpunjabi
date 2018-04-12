@@ -1,14 +1,3 @@
-var connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
-var ctype = connection.effectiveType;
-var notch = document.querySelector("#notch");
-
-if(ctype == "wifi"){
-    document.querySelector(".fa-wifi").style.visibility="visible";
-}
-if(ctype == "bluetooth"){
-    document.querySelector(".fa-bluetooth-b").style.visibility="visible";
-}
-
 var myVar = setInterval(myTimer, 1000);
 function myTimer() {
     navigator.getBattery().then(function(battery) {
