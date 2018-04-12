@@ -25,18 +25,31 @@ a:hover{
     align-items: center;
 }
 #notch{
-    background: black;
-    height: 100%;
-    min-width: 35%;
-    max-width: 50%;
-    border-bottom-left-radius: 5vh;
-    border-bottom-right-radius: 5vh;
+    display: flex;
+    justify-content: flex-end;
+}
+#notch i{
+    padding: 0 2.5vmin;
+    visibility: hidden;
+}
+#notch .fa-signal{
+    visibility: visible;
 }
 #header span{
-    padding: 0 5vmin;
     text-align: center;
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
+}
+#name{
+    padding-left: 5vmin;
+}
+#battery{
+    padding-right: 2.5vmin;
+}
+#date{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
 }
 #github{
     display: flex;
