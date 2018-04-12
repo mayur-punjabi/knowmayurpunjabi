@@ -1,55 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald');
-*{
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-}
-::-webkit-scrollbar {
-    width: 0px; 
-    background: transparent;  
-}
-::-webkit-scrollbar-thumb {
-    background: #ffffff;
-}
 .container-fluid{
     max-width: 100vmin;
     border-radius: 5vmin;
-}
-a:hover{
-    text-decoration: none;
-}
-#header{
-    height: 5vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-#notch{
-    display: flex;
-    justify-content: flex-end;
-}
-#notch i{
-    padding: 0 2.5vmin;
-    visibility: hidden;
-}
-#notch .fa-signal{
-    visibility: visible;
-}
-#header span{
-    text-align: center;
-    font-weight: bold;
-    font-family: 'Oswald', sans-serif;
-}
-#name{
-    padding-left: 5vmin;
-}
-#battery{
-    padding-right: 2.5vmin;
-}
-#date{
-    position: absolute;
-    left:50%;
-    transform: translateX(-50%);
 }
 #instafeed{
     height: 85vh;
