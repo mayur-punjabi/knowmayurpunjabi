@@ -6,7 +6,8 @@
 
 var connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
 var ctype = connection.type;
-console.log(ctype)
+console.log(ctype);
+document.querySelector("#notch").innerText = ctype;
 function updateConnectionStatus() {
   console.log("Connection type changed from " + ctype + " to " + connection.type);
 }
