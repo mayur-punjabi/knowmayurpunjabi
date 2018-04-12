@@ -1,0 +1,26 @@
+.container-fluid{
+    height: 100vh;
+    max-width: 100vmin;
+    border-radius: 5vmin;
+    background-image: url(bg.JPG);
+    background-size: cover;
+    background-position: center 20%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+}
+
+a{
+    font-size: 5rem;
+    color: white;
+}
+.dock{
+    width: 95vmin;
+    border-radius: 5vmin;
+    position: absolute;
+    bottom: 2.5%;
+    left: 5vmin;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(255,255,255,0.5);
+}
