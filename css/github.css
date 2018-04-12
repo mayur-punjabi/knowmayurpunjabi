@@ -1,6 +1,8 @@
 .container-fluid{
     max-width: 100vmin;
     border-radius: 5vmin;
+    position: relative;
+    height: 100vh;
 }
 #github{
     display: flex;
@@ -13,12 +15,20 @@
     overflow-x: hidden;
 }
 p{
+    position: absolute;
+    width: 100%;
+    bottom: 5vh;
+    left: 0;
     text-align: center;
     height: 2.75vh;
     padding: 1vh 0;
     line-height: 200%;
 }
 #bar{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
     height: 5vh;
     display: flex;
     align-items: center;
