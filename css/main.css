@@ -26,10 +26,6 @@ a:hover{
 }
 #notch i{
     padding: 0 2.5vmin;
-    visibility: hidden;
-}
-#notch .fa-signal{
-    visibility: visible;
 }
 #header span{
     text-align: center;
