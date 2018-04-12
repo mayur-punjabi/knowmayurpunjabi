@@ -1,28 +1,18 @@
-//var ctype = navigator.connection.effectiveType;
-//console.log(ctype);
-//document.querySelector("#notch").innerText = ctype;
-
-
-
 var connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
-var ctype = connection.type;
+var ctype = connection.effectiveType;
 console.log(ctype);
-document.querySelector("#notch").innerText = ctype;
-function updateConnectionStatus() {
-  console.log("Connection type changed from " + ctype + " to " + connection.type);
+var notch = document.querySelector("#notch");
+
+if(ctype == "wifi"){
+    document.querySelector(".fa-wifi").style.visibility="visible";
+}
+if(ctype == "bluetooth"){
+    document.querySelector(".fa-bluetooth-b").style.visibility="visible";
 }
 
-connection.addEventListener('change', updateConnectionStatus);
-
-
 navigator.getBattery().then(function(battery) {
-       
-    
-
-    console.log(battery.level);
+    document.querySelector("#battery").innerHTML = battery.level * 100 + " %";
 });
 
-var d = new Date(); // for now
-console.log(d.getHours()); // => 9
-console.log(d.getMinutes()); // =>  30
-d.getSeconds(); // => 51
+var d = new Date();
+document.querySelector("#date").innerHTML = d.getHours() + " : " + d.getMinutes();
