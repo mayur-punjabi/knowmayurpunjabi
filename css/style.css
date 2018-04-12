@@ -31,6 +31,8 @@ a:hover{
     max-width: 50%;
     border-bottom-left-radius: 5vh;
     border-bottom-right-radius: 5vh;
+    color: white;
+    font-size: 2rem;
 }
 #header span{
     padding: 0 5vmin;
