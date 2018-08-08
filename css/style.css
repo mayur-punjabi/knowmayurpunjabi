@@ -2,6 +2,7 @@
     height: 100vh;
     max-width: 100vmin;
     border-radius: 5vmin;
+    background-color:black;
     background-image: url(bg.JPEG);
     background-size: 100% 50%;
     background-position: center center;
