@@ -2,12 +2,11 @@
     height: 100vh;
     max-width: 100vmin;
     border-radius: 5vmin;
-    background-image: url(bg.JPG);
-    background-size: contain;
-    background-position: center 20%;
+    background-image: url(bg.JPEG);
+    background-size: 100% 50%;
+    background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    filter: grayscale(1);
 }
 
 a{
