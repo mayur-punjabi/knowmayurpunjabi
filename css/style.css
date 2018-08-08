@@ -2,7 +2,7 @@
     height: 100vh;
     max-width: 100vmin;
     border-radius: 5vmin;
-/*     background-color:black; */
+    background-color:black;
     background-image: url(bg.jpg);
     background-size: 75vmin 75vmin;
     background-position: center center;
@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
 }
 #header{
-    color: black;
+    color: white;
 }
 a{
     font-size: 5rem;
