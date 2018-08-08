@@ -4,12 +4,14 @@
     border-radius: 5vmin;
     background-color:black;
     background-image: url(bg.JPEG);
-    background-size: 100% 50%;
+    background-size: 75vmin 75vmin;
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-
+#header{
+    color: white;
+}
 a{
     font-size: 5rem;
     color: white;
